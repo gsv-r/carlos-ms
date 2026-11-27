@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Carlos Mudas de Seringueira
 
-## Getting Started
+Landing page institucional para comercialização de mudas de seringueira de alta qualidade. Apresenta os clones disponíveis (RRIM, RIM e IAC), os benefícios, o processo de compra e a entrega especializada, centralizando a solicitação de orçamentos pelo WhatsApp.
 
-First, run the development server:
+## Funcionalidades
+
+- Página única com seções de apresentação, benefícios, processo, chamada para ação, perguntas frequentes e rodapé.
+- Navegação responsiva: menu desktop e menu lateral no mobile.
+- Solicitação de orçamento por link direto para o WhatsApp.
+- Perguntas frequentes em accordion.
+- Rastreamento de conversões com Google Ads (gtag.js).
+- Build estático (`out/`), pronto para hospedagem em servidor de arquivos estáticos.
+
+## Tecnologias
+
+- Next.js 16 (App Router) e React 19
+- TypeScript
+- Tailwind CSS 4 e tw-animate-css
+- shadcn/ui e Radix UI
+- lucide-react
+- Fonte Montserrat via `next/font`
+
+## Como executar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para gerar a versão de produção estática em `out/`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Para verificar o código com ESLint:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+```
